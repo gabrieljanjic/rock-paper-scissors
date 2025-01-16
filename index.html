@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" type="image/x-icon" href="imgs/ilustration.jpg"
+  </head>
+  <body>
+    <div class="position">
+      <div class="game">
+        <div class="left hidden"><img src="imgs/rock.png" /></div>
+        <div class="right hidden"><img src="imgs/rock.png" /></div>
+        <div class="my-choice choice hidden"></div>
+        <div class="bot-choice choice hidden"></div>
+        <p class="my-p-score score hidden">
+          My score: <span class="result my-result">0</span>
+        </p>
+        <p class="bot-p-score score hidden">
+          Bot score: <span class="result bot-result">0</span>
+        </p>
+        <p class="lets-play">Let's Play!</p>
+        <button class="choice-btn" value="rock">
+          <img src="imgs/rock.png" class="choice-img" />
+        </button>
+        <button class="choice-btn" value="paper">
+          <img src="imgs/paper.png" class="choice-img" />
+        </button>
+        <button class="choice-btn" value="scissors">
+          <img src="imgs/scissors.png" class="choice-img" />
+        </button>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
