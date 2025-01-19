@@ -1,0 +1,145 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-color: #fcc419;
+}
+
+.position {
+  max-width: 40rem;
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.game-3way {
+  border-radius: 1rem;
+  background-color: #fff;
+  padding: 1rem 2rem 1.6rem;
+  display: none;
+  grid-template-columns: repeat(6, 1fr);
+  justify-items: center;
+  align-items: center;
+  gap: 2rem;
+}
+.go-back {
+  background: none;
+  cursor: pointer;
+  grid-column: 1/-1;
+  justify-self: end;
+  border: none;
+  outline: none;
+  font-size: 2rem;
+  padding: 0.6rem 1rem;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.go-back:hover {
+  background-color: rgb(236, 236, 236);
+  transform: scale(1.05);
+}
+.choice,
+.left,
+.right {
+  font-size: 7rem;
+  grid-column: span 3;
+}
+
+.my-choice {
+  transform: rotate(90deg);
+}
+.bot-choice {
+  transform: rotate(-90deg);
+}
+
+.score {
+  grid-column: span 3;
+  font-size: 2rem;
+}
+.lets-play {
+  grid-column: span 6;
+  font-size: 3rem;
+}
+.choice-btn {
+  border-radius: 500px;
+  cursor: pointer;
+  grid-column: span 2;
+  background-color: #fff;
+  border: none;
+  padding: 1rem;
+  transition: all 0.4s;
+}
+.choice-btn:hover {
+  background-color: #e9ecef;
+}
+
+.choice-img {
+  width: 5rem;
+  height: auto;
+}
+
+.hidden {
+  display: none;
+}
+
+.left {
+  transform: scaleX(-1) rotate(-90deg);
+  animation: shakeLeft 1s linear;
+}
+.right {
+  transform: rotate(-90deg);
+  animation: shakeRight 1s linear;
+}
+@keyframes shakeRight {
+  0% {
+    transform: rotate(-95deg);
+  }
+  20% {
+    transform: rotate(-85deg);
+  }
+  40% {
+    transform: rotate(-95deg);
+  }
+  60% {
+    transform: rotate(-85deg);
+  }
+  80% {
+    transform: rotate(-95deg);
+  }
+  100% {
+    transform: rotate(-90deg);
+  }
+}
+@keyframes shakeLeft {
+  0% {
+    transform: scaleX(-1) rotate(-95deg);
+  }
+  20% {
+    transform: scaleX(-1) rotate(-85deg);
+  }
+  40% {
+    transform: scaleX(-1) rotate(-95deg);
+  }
+  60% {
+    transform: scaleX(-1) rotate(-85deg);
+  }
+  80% {
+    transform: scaleX(-1) rotate(-95deg);
+  }
+  100% {
+    transform: scaleX(-1) rotate(-90deg);
+  }
+}
+.scale-1 {
+  transform: scaleX(-1);
+}

@@ -4,12 +4,31 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Rock Paper Scissors</title>
-    <link rel="stylesheet" href="styles.css" />
-    <link rel="icon" type="image/x-icon" href="imgs/ilustration.jpg"
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/welcome.css" />
+    <link rel="stylesheet" href="css/5way.css" />
+    <link rel="icon" type="image/x-icon" href="imgs/ilustration.jpg" />
   </head>
   <body>
     <div class="position">
-      <div class="game">
+      <div class="welcome-screen">
+        <h1 class="game-mod-h1">Select Game Mode:</h1>
+        <div class="game-mod-div">
+          <div class="game-mod" id="game-mod-3way">
+            <img src="imgs/rps-3way.png" class="game-mod-img" />
+            <p class="game-mod-p-big">Classic mod</p>
+            <p class="game-mod-p">(Rock, Paper, Scissors)</p>
+          </div>
+          <div class="game-mod" id="game-mod-5way">
+            <img src="imgs/rps-5way.webp" class="game-mod-img" />
+            <p class="game-mod-p-big">Extended mod</p>
+            <p class="game-mod-p">(Rock, Paper, Scissors, Lizard, Spock)</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="game-3way">
+        <button class="go-back">&larr;</button>
         <div class="left hidden"><img src="imgs/rock.png" /></div>
         <div class="right hidden"><img src="imgs/rock.png" /></div>
         <div class="my-choice choice hidden"></div>
@@ -31,7 +50,38 @@
           <img src="imgs/scissors.png" class="choice-img" />
         </button>
       </div>
+      <div class="game-5way">
+        <button class="go-back">&larr;</button>
+        <div class="left-5way hidden"><img src="imgs/rock.png" /></div>
+        <div class="right-5way hidden"><img src="imgs/rock.png" /></div>
+        <div class="my-choice-5way choice-5way hidden"></div>
+        <div class="bot-choice-5way choice-5way hidden"></div>
+        <p class="my-p-score-5way score-5way hidden">
+          My score: <span class="result my-result-5way">0</span>
+        </p>
+        <p class="bot-p-score-5way score-5way hidden">
+          Bot score: <span class="result bot-result-5way">0</span>
+        </p>
+        <p class="lets-play-5way">Let's Play!</p>
+        <button class="choice-btn-5way" value="rock">
+          <img src="imgs/rock.png" class="choice-img" />
+        </button>
+        <button class="choice-btn-5way" value="paper">
+          <img src="imgs/paper.png" class="choice-img" />
+        </button>
+        <button class="choice-btn-5way" value="scissors">
+          <img src="imgs/scissors.png" class="choice-img" />
+        </button>
+        <button class="choice-btn-5way" value="lizard">
+          <img src="imgs/lizard.png" class="choice-img" />
+        </button>
+        <button class="choice-btn-5way" value="spock">
+          <img src="imgs/spock.png" class="choice-img" />
+        </button>
+      </div>
     </div>
-    <script src="script.js"></script>
+    <script type="module" src="js/script-welcome.js"></script>
+    <script type="module" src="js/script.js"></script>
+    <script type="module" src="js/script-5way.js"></script>
   </body>
 </html>

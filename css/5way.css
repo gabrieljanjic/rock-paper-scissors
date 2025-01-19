@@ -1,58 +1,37 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  position: relative;
-  width: 100%;
-  height: 100vh;
-  background-color: #fcc419;
-}
-
-.position {
-  max-width: 35rem;
-  width: 100%;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.game {
+.game-5way {
   border-radius: 1rem;
   background-color: #fff;
-  padding: 2rem;
-  display: grid;
-  grid-template-columns: repeat(6, 1fr);
+  padding: 1rem 2rem 1.6rem;
+  display: none;
+  grid-template-columns: repeat(10, 1fr);
   justify-items: center;
   align-items: center;
-  gap: 2rem;
+  row-gap: 2rem;
+  column-gap: 0.5rem;
 }
-.choice,
-.left,
-.right {
+.choice-5way,
+.left-5way,
+.right-5way {
   font-size: 7rem;
-  grid-column: span 3;
+  grid-column: span 5;
 }
 
-.my-choice {
+.my-choice-5way {
   transform: rotate(90deg);
 }
-.bot-choice {
+.bot-choice-5way {
   transform: rotate(-90deg);
 }
 
-.score {
-  grid-column: span 3;
+.score-5way {
+  grid-column: span 5;
   font-size: 2rem;
 }
-.lets-play {
-  grid-column: span 6;
+.lets-play-5way {
+  grid-column: span 10;
   font-size: 3rem;
 }
-.choice-btn {
+.choice-btn-5way {
   border-radius: 500px;
   cursor: pointer;
   grid-column: span 2;
@@ -61,24 +40,14 @@ body {
   padding: 1rem;
   transition: all 0.4s;
 }
-.choice-btn:hover {
+.choice-btn-5way:hover {
   background-color: #e9ecef;
 }
-
-.choice-img {
-  width: 5rem;
-  height: auto;
-}
-
-.hidden {
-  display: none;
-}
-
-.left {
+.left-5way {
   transform: scaleX(-1) rotate(-90deg);
   animation: shakeLeft 1s linear;
 }
-.right {
+.right-5way {
   transform: rotate(-90deg);
   animation: shakeRight 1s linear;
 }

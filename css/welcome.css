@@ -1,0 +1,39 @@
+.game-mod-h1 {
+  text-align: center;
+  font-size: 2.4rem;
+  margin-bottom: 1.8rem;
+}
+.game-mod-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.game-mod {
+  background-color: #fff;
+  border-radius: 1rem;
+  padding: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.3);
+  transition: all 0.4s;
+}
+.game-mod:hover {
+  box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.6);
+  transform: scale(1.03);
+}
+.game-mod-img {
+  height: 16rem;
+}
+
+.game-mod-p-big {
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+}
+
+.game-mod-p {
+  font-size: 1rem;
+}
