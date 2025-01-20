@@ -1,14 +1,7 @@
-.game-5way {
-  border-radius: 1rem;
-  background-color: #fff;
-  padding: 1rem 2rem 1.6rem;
-  display: none;
-  grid-template-columns: repeat(10, 1fr);
-  justify-items: center;
-  align-items: center;
-  row-gap: 2rem;
-  column-gap: 0.5rem;
+.go-back-5way {
+  grid-column: span 9;
 }
+
 .choice-5way,
 .left-5way,
 .right-5way {

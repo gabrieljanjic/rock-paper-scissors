@@ -13,6 +13,7 @@
     <div class="position">
       <div class="welcome-screen">
         <h1 class="game-mod-h1">Select Game Mode:</h1>
+
         <div class="game-mod-div">
           <div class="game-mod" id="game-mod-3way">
             <img src="imgs/rps-3way.png" class="game-mod-img" />
@@ -23,11 +24,26 @@
             <img src="imgs/rps-5way.webp" class="game-mod-img" />
             <p class="game-mod-p-big">Extended mod</p>
             <p class="game-mod-p">(Rock, Paper, Scissors, Lizard, Spock)</p>
+            <p class="info">ⓘ</p>
+            <p class="exit hidden">×</p>
+            <div class="info-div hidden">
+              Rock crushes Scissors.<br />
+              Scissors cuts Paper.<br />
+              Paper covers Rock.<br />
+              Rock crushes Lizard.<br />
+              Lizard poisons Spock.<br />
+              Spock smashes Scissors.<br />
+              Scissors decapitates Lizard.<br />
+              Lizard eats Paper.<br />
+              Paper disproves Spock.<br />
+              Spock vaporizes Rock.
+            </div>
           </div>
         </div>
       </div>
 
       <div class="game-3way">
+        <button class="reset" value="reset">⟳</button>
         <button class="go-back">&larr;</button>
         <div class="left hidden"><img src="imgs/rock.png" /></div>
         <div class="right hidden"><img src="imgs/rock.png" /></div>
@@ -51,7 +67,8 @@
         </button>
       </div>
       <div class="game-5way">
-        <button class="go-back">&larr;</button>
+        <button class="reset" value="reset-5way">⟳</button>
+        <button class="go-back go-back-5way">&larr;</button>
         <div class="left-5way hidden"><img src="imgs/rock.png" /></div>
         <div class="right-5way hidden"><img src="imgs/rock.png" /></div>
         <div class="my-choice-5way choice-5way hidden"></div>
@@ -80,8 +97,6 @@
         </button>
       </div>
     </div>
-    <script type="module" src="js/script-welcome.js"></script>
     <script type="module" src="js/script.js"></script>
-    <script type="module" src="js/script-5way.js"></script>
   </body>
 </html>

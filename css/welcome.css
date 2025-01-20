@@ -25,6 +25,7 @@
   box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.6);
   transform: scale(1.03);
 }
+
 .game-mod-img {
   height: 16rem;
 }
@@ -36,4 +37,52 @@
 
 .game-mod-p {
   font-size: 1rem;
+}
+#game-mod-5way {
+  position: relative;
+}
+.info {
+  position: absolute;
+  padding: 0.2rem;
+  top: 5%;
+  right: 5%;
+  font-size: 1.4rem;
+  z-index: 100;
+  cursor: pointer;
+}
+
+.info-div {
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.3);
+  padding: 0.2rem;
+  max-width: 15rem;
+  height: auto;
+  padding: 0.5rem 2rem 0.5rem 0.5rem;
+  border-radius: 10px;
+  background-color: #fff;
+
+  position: absolute;
+  z-index: 1000;
+  top: 5%;
+  right: 3%;
+}
+
+.exit {
+  padding: 0.2rem;
+  position: absolute;
+  top: 3.5%;
+  right: 5.5%;
+  z-index: 10000;
+  font-size: 2rem;
+  cursor: pointer;
+}
+.game-5way {
+  border-radius: 1rem;
+  background-color: #fff;
+  padding: 1rem 2rem 1.6rem;
+  display: none;
+  grid-template-columns: repeat(10, 1fr);
+  justify-items: center;
+  align-items: center;
+  row-gap: 2rem;
+  column-gap: 0.5rem;
 }
