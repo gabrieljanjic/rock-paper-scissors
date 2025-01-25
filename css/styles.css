@@ -26,6 +26,7 @@ body {
   padding: 1rem 2rem 1.6rem;
   display: none;
   grid-template-columns: repeat(6, 1fr);
+  margin: 1rem;
   justify-items: center;
   align-items: center;
   gap: 2rem;
@@ -70,7 +71,10 @@ body {
   font-size: 7rem;
   grid-column: span 3;
 }
-
+.size {
+  width: 10rem;
+  height: auto;
+}
 .my-choice {
   transform: rotate(90deg);
 }

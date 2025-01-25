@@ -1,0 +1,43 @@
+/*Welcome screen*/
+/*800px*/
+@media (max-width: 50rem) {
+  html {
+    font-size: 87.5%;
+  }
+}
+@media (max-width: 44rem) {
+  html {
+    font-size: 75%;
+  }
+}
+@media (max-width: 38rem) {
+  .game-mod-div {
+    flex-direction: column;
+  }
+}
+@media (max-width: 32rem) {
+  html {
+    font-size: 62.5%;
+  }
+  .game-mod-div {
+    flex-direction: column;
+  }
+}
+@media (max-width: 27rem) {
+  html {
+    font-size: 50%;
+  }
+  .size {
+    width: 12rem;
+    height: auto;
+  }
+}
+@media (max-width: 22rem) {
+  html {
+    font-size: 42.5%;
+  }
+  .size {
+    width: 12rem;
+    height: auto;
+  }
+}

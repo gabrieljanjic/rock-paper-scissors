@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css/styles.css" />
     <link rel="stylesheet" href="css/welcome.css" />
     <link rel="stylesheet" href="css/5way.css" />
+    <link rel="stylesheet" href="css/media-queries.css" />
     <link rel="icon" type="image/x-icon" href="imgs/ilustration.jpg" />
   </head>
   <body>
@@ -41,14 +42,17 @@
           </div>
         </div>
       </div>
-
       <div class="game-3way">
         <button class="reset" value="reset">⟳</button>
         <button class="go-back">&larr;</button>
-        <div class="left hidden"><img src="imgs/rock.png" /></div>
-        <div class="right hidden"><img src="imgs/rock.png" /></div>
-        <div class="my-choice choice hidden"></div>
-        <div class="bot-choice choice hidden"></div>
+        <div class="left hidden size">
+          <img class="size" src="imgs/rock.png" />
+        </div>
+        <div class="right hidden size">
+          <img class="size" src="imgs/rock.png" />
+        </div>
+        <div class="my-choice size choice hidden"></div>
+        <div class="bot-choice size choice hidden"></div>
         <p class="my-p-score score hidden">
           My score: <span class="result my-result">0</span>
         </p>
@@ -69,10 +73,14 @@
       <div class="game-5way">
         <button class="reset" value="reset-5way">⟳</button>
         <button class="go-back go-back-5way">&larr;</button>
-        <div class="left-5way hidden"><img src="imgs/rock.png" /></div>
-        <div class="right-5way hidden"><img src="imgs/rock.png" /></div>
-        <div class="my-choice-5way choice-5way hidden"></div>
-        <div class="bot-choice-5way choice-5way hidden"></div>
+        <div class="left-5way hidden size">
+          <img class="size" src="imgs/rock.png" />
+        </div>
+        <div class="right-5way hidden size">
+          <img class="size" src="imgs/rock.png" />
+        </div>
+        <div class="my-choice-5way size choice-5way hidden"></div>
+        <div class="bot-choice-5way size choice-5way hidden"></div>
         <p class="my-p-score-5way score-5way hidden">
           My score: <span class="result my-result-5way">0</span>
         </p>

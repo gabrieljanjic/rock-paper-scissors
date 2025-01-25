@@ -120,10 +120,10 @@ buttons.forEach(function (button) {
       myChoice.classList.remove("hidden");
 
       //Added class to look more natural
-      myChoice.innerHTML = `<img class="scale-1" src="imgs/${button.value}.png" />`;
+      myChoice.innerHTML = `<img class="scale-1 size" src="imgs/${button.value}.png" />`;
 
       const botPick = choices[Math.floor(Math.random() * 3)];
-      botChoice.innerHTML = `<img src="imgs/${botPick}.png" />`;
+      botChoice.innerHTML = `<img class="size" src="imgs/${botPick}.png" />`;
 
       if (button.value === botPick) {
         letsPlay.textContent = "Draw!";
@@ -182,10 +182,10 @@ buttons5way.forEach(function (button) {
       botChoice5way.classList.remove("hidden");
       myChoice5way.classList.remove("hidden");
 
-      myChoice5way.innerHTML = `<img class="scale-1" src="imgs/${button.value}.png" />`;
+      myChoice5way.innerHTML = `<img class="scale-1 size" src="imgs/${button.value}.png" />`;
 
       const botPick = choices5way[Math.floor(Math.random() * 5)];
-      botChoice5way.innerHTML = `<img src="imgs/${botPick}.png" />`;
+      botChoice5way.innerHTML = `<img class="size" src="imgs/${botPick}.png" />`;
 
       if (button.value === botPick) {
         letsPlay5way.textContent = "Draw!";
