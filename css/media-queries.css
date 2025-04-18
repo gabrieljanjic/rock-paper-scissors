@@ -14,30 +14,37 @@
   .game-mod-div {
     flex-direction: column;
   }
+  .game-mod {
+    max-width: 50rem;
+    width: 100%;
+    margin: 0 auto;
+  }
 }
 @media (max-width: 32rem) {
   html {
-    font-size: 62.5%;
+    font-size: 65%;
   }
+
   .game-mod-div {
-    flex-direction: column;
+    margin: 0 auto;
+  }
+  .game-mod {
+    max-width: 40rem;
   }
 }
 @media (max-width: 27rem) {
   html {
-    font-size: 50%;
+    font-size: 55%;
   }
-  .size {
-    width: 12rem;
-    height: auto;
+  .game-mod {
+    max-width: 30rem;
   }
 }
 @media (max-width: 22rem) {
   html {
-    font-size: 42.5%;
+    font-size: 45%;
   }
-  .size {
-    width: 12rem;
-    height: auto;
+  .game-mod {
+    max-width: 35rem;
   }
 }
